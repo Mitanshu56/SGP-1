@@ -1,0 +1,114 @@
+
+.body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.opacity{
+    background-color:black;
+    height: 100%;
+}
+.header {
+  background-color: transparent;
+  color: white;
+  padding: 2px;
+  text-align:right;
+  /* display: flex;
+  justify-content: space-between; */
+  /* display: flex; */
+  position: relative;
+  z-index: 100;
+}
+.inner-header
+{
+    display: flex;
+    justify-content: space-between;
+}
+.header a {
+  color: white;
+  padding: 10px;
+  text-decoration: none;
+  font-size: 25px;
+  margin-right:25px;
+}
+.header-right{
+    display: flex;
+    align-items: center;
+    margin-right: 110px;
+}
+.header a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.header .logo {
+  float: left;
+  width: 80px;
+  height: 80px;
+  margin-right: 10px;
+}
+
+.content {
+  padding: 16px;
+  background-color: #f1f1f1;
+}
+body,html{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    font-family: sans-serif;
+}
+.Section_top{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    background-image: url(https://www.charusat.ac.in/cspit/images/CSPIT_SLIDER_11.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    justify-content: center;
+    animation: change 10s infinite ease-in-out;
+    opacity: 0.5;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+.content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-transform: uppercase;
+
+}
+.content h1{
+    color: #fff;
+    font-size: 60px;
+    letter-spacing: 15px;
+}
+.content h1 span{
+    color: #111;
+}
+.content a{
+    background: #85c1ee;
+    padding: 10px 24px;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 20px;
+}
+.content a:hover{
+    background: #034e88;
+    color: #fff;
+}
+@keyframes change{
+    33%
+    {
+        background-image: url(https://www.charusat.ac.in/cspit/images/CSPIT_SLIDER_5.webp);
+    }
+    66%
+    {
+        background-image: url(https://www.charusat.ac.in/cspit/images/CSPIT_SLIDER_4.webp);
+    }     
+}
