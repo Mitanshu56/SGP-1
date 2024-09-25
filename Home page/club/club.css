@@ -1,0 +1,148 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background: #f0f0f0;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+}
+
+nav ul li a::after {
+    content: '';
+    display: block;
+    height: 2px;
+    background: #fff;
+    width: 0;
+    transition: width 0.3s;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+.clubs-section {
+    padding: 20px;
+    text-align: center;
+}
+
+.club-cards {
+    display: flex;
+    flex-wrap: wrap; /* Allows cards to wrap to the next line */
+    justify-content: center; /* Centers the cards */
+    gap: 20px; /* Adds consistent space between cards */
+}
+
+
+.club-card {
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    width: 200px; /* Fixed width for consistency */
+    height: 250px; /* Fixed height */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.club-card {
+    margin: 15px 30px; /* 15px for top/bottom, 10px for left/right */
+}
+
+
+.club-card img {
+    width: 100px;  /* Fixed width for logos */
+    height: 100px; /* Fixed height for logos */
+    border-radius: 50%; /* Circular shape */
+    margin-bottom: 10px; /* Space between logo and text */
+}
+
+
+.club-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+
+/* Responsive styles */
+@media (max-width: 600px) {
+    .club-cards {
+        flex-direction: column;
+    }
+
+    .club-card {
+        width: 100%;
+        margin: 10px 0;
+    }
+}
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background: #333;
+    color: white;
+}
+
+.logo {
+    height: 50px; /* Adjust as needed */
+}
+
+.inner-header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.header-right {
+    margin-left: auto;
+}
+
+.header-right a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.header-right a:hover {
+    text-decoration: underline;
+}
+.inner-header {
+    display: flex;
+    align-items: center; /* Align items vertically in the center */
+}
+
+.showcase-title {
+    font-size: 24px; /* Adjust size as needed */
+    margin-left: 10px; /* Space between logo and title */
+    color: white; /* Match the color with the header */
+}
