@@ -3,14 +3,34 @@
     margin: 0;
     padding: 0;
 }
-
-
 body {
     font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background: #f0f0f0;
+    background-color: #ffffff;
+    overflow: hidden;
+}
+body,html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    font-family: sans-serif;
+}
+.opacity {
+    background-color: black;
+    background-blend-mode: overlay; /* Overlay blend mode for the dark layer */
 }
 
+.back-holder {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: url(https://www.charusat.ac.in/assets/images/home/slider1111.webp) no-repeat center center/cover;
+    background-color: rgba(23, 17, 1, 0.686); /* Add a background color that blends with the image */
+    background-blend-mode:multiply; /* Apply hard-light blending mode */
+    z-index: -1;
+}
 header {
     background: #333;
     color: #fff;
@@ -105,44 +125,50 @@ nav ul li a:hover::after {
     }
 }
 .header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px;
-    background: #333;
+    background-color: transparent;
     color: white;
-}
-
-.logo {
-    height: 50px; /* Adjust as needed */
+    padding: 2px;
+    text-align: right;
+    position: relative;
+    z-index: 100;
 }
 
 .inner-header {
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    justify-content: space-between;
+
+
+    color: #fff;
+    text-shadow:
+        /* 0 0 7px #fff, */
+        /* 0 0 10px #fff, */
+        /* 0 0 21px #aeddff, */
+        0 0 42px rgb(180, 206, 255),
+        0 0 151px rgb(255, 255, 255);
+} 
+
+.header a {
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 20px;
+    margin-right: 25px;
 }
 
 .header-right {
-    margin-left: auto;
-}
-
-.header-right a {
-    color: white;
-    text-decoration: none;
-    margin: 0 10px;
-}
-
-.header-right a:hover {
-    text-decoration: underline;
-}
-.inner-header {
     display: flex;
-    align-items: center; /* Align items vertically in the center */
+    align-items: center;
+    margin-right: 110px;
 }
 
-.showcase-title {
-    font-size: 24px; /* Adjust size as needed */
-    margin-left: 10px; /* Space between logo and title */
-    color: white; /* Match the color with the header */
+.header a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.header .logo {
+    float: left;
+    width: 80px;
+    height: 80px;
+    margin-right: 10px;
 }
