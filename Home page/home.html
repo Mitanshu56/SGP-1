@@ -1,37 +1,131 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-  <link rel="stylesheet" href="home.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Club Management System</title>
+  <link rel="stylesheet" href="home.css"> <!-- Your original CSS -->
+  <link rel="stylesheet" href="swiper-style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <style>
+    /* Add your event card styling here */
+    
+  </style>
 </head>
 
 <body>
-
   <div class="opacity">
     <div class="header">
-      <img src="https://www.charusat.ac.in/cspit/images/cspitlogo.webp" alt="Logo" class="logo">
       <div class="inner-header">
-        <h1 style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif">CLUBS
-          MANAGMENT SYSTEM</h1>
-
+        <h1 style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif">Clubs Management System</h1>
         <div class="header-right">
           <a href="home.html">Home</a>
           <a href="clubs.html">Clubs</a>
-          <a href="login.html">Login</a>
+          <a href="LOGIN PAGE/login.html">Login</a>
           <a href="#">About us</a>
         </div>
-
       </div>
-      <!-- <div class="typewriter">
-                <h3
-                    style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
-                    CHARUSAT UNIVERSITY</h3>
-            </div> -->
     </div>
+
+    <!-- Background Section -->
     <div class="Section_top">
+      <!-- Background transition effect will remain here -->
     </div>
+
+    <!-- Slider Container -->
+    <div class="slider-container">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="https://github.com/Mitanshu56/SGP-1/blob/main/Images/charusatlogo.jpg?raw=true"
+              alt="Random Image 1">
+            <button class="register-button" onclick="window.location.href='registration.html'">Register Now</button>
+          </div>
+          <div class="swiper-slide">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTH6XO2X5A8MgTHP2bbeWnP1v4RDb9L2IIR6g&s" alt="Random Image 2">
+            <button class="register-button" onclick="window.location.href='registration.html'">Register Now</button>
+          </div>
+          <div class="swiper-slide">
+            <img src="https://github.com/Mitanshu56/SGP-1/blob/main/Images/charusatlogo.jpg?raw=true"
+              alt="Random Image 3">
+            <button class="register-button" onclick="window.location.href='registration.html'">Registration</button>
+          </div>
+        </div>
+
+        <!-- Add navigation buttons -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </div>
+
+    <!-- Event Cards Section -->
+    <div class="event-container">
+      <!-- Event Card 1 -->
+      <div class="event-card">
+        <div class="event-date">
+          <div class="date-day">11</div>
+          <div class="date-month">Sept</div>
+          <div class="date-year">2024</div>
+        </div>
+        <div class="event-details">
+          <h2>Recruitment - Open Positions</h2>
+          <ul>
+            <li>Laboratory Technologist (Molecular Diagnostic)</li>
+            <li>Laboratory Technician (Molecular Diagnostic)</li>
+          </ul>
+          <div class="event-location">
+            <span>📍 CHARUSAT</span>
+          </div>
+          <button class="event-button">Get Details</button>
+        </div>
+      </div>
+
+      <!-- Event Card 2 -->
+      <div class="event-card">
+        <div class="event-date">
+          <div class="date-day">15</div>
+          <div class="date-month">July</div>
+          <div class="date-year">2024</div>
+        </div>
+        <div class="event-details">
+          <h2>14<sup>th</sup> Convocation</h2>
+          <div class="event-location">
+            <span>📍 CHARUSAT</span>
+          </div>
+          <div class="multi-buttons">
+            <button class="event-button">Registration Details</button>
+            <button class="event-button">Advertisement Details</button>
+            <button class="event-button">Tender Form</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Event Card 3 -->
+      <div class="event-card">
+        <div class="event-date">
+          <div class="date-day">03</div>
+          <div class="date-month">Sept</div>
+          <div class="date-year">2024</div>
+        </div>
+        <div class="event-details">
+          <h2>Ph. D. Admission 2024-25</h2>
+          <div class="event-location">
+            <span>📍 CHARUSAT</span>
+          </div>
+          <button class="event-button">Qualified Candidates List for PhD Admission 2024</button>
+        </div>
+      </div>
+
+    </div>
+
   </div>
 
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="script.js"></script> <!-- Link to the JavaScript file -->
 </body>
 
 </html>
